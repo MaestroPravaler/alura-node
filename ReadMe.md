@@ -74,7 +74,7 @@ O objetivo da criação do arquivo é para não subir para o git os diretórios/
 2. Criando a visualização das entradas pelo postman
     ```
     body:
-    
+
     {
         "id": 3,
         "titulo": "Clean Code",
@@ -87,3 +87,21 @@ O objetivo da criação do arquivo é para não subir para o git os diretórios/
 5. Aproveitando a lógica do método PUT e fazendo a consulta de livros por Id.
 6. Adicionando o método DELETE no arquivo app.src
 7. Introduzindo o conceito de "atribuição via desestruturação" => atribuição para uma variável valores retirados de um array ou objeto (linha 37)
+
+## Etapa 05 (Trabalhando com MongoDB - Instalação, configuração e o primeiro GET)
+
+![](/assets/images/mongo.png)
+
+1. Criando a conta no Mongo Atlas
+2. Build do primiero Cluster
+3. Criando o primeiro database
+4. Criando a coleção e inserindo um primeiro dado para consultar
+5. Instalando o mongoose
+    ```
+    npm install mongoose@6.2.6
+    ```
+6. Criando a pasta config/dbConnect.js para configurar a conecção com o servidor
+7. Adicionando no arquivo app.js as funções db.on() e db.once para conectar e abrir a conecção com o banco de dados. 
+8. Criando a pasta models onde colocaremos todos os modelos que representam uma coleção no banco de dados.
+9. Adicionando o arquivo Livro.js. OBS: é comum quando estamos tratando de uma coleção, uma entidade do banco de dados colocar o arquivo com a primeira letra maiúscula no singular.
+10. Buscando as informações cadastradas no MongoDB
