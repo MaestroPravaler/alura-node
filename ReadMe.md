@@ -105,3 +105,13 @@ O objetivo da criação do arquivo é para não subir para o git os diretórios/
 8. Criando a pasta models onde colocaremos todos os modelos que representam uma coleção no banco de dados.
 9. Adicionando o arquivo Livro.js. OBS: é comum quando estamos tratando de uma coleção, uma entidade do banco de dados colocar o arquivo com a primeira letra maiúscula no singular.
 10. Buscando as informações cadastradas no MongoDB
+
+## Etapa 06 (Melhorando Design Pattern do Projeto - Controllers/Routes/Models - CRUD Completo)
+
+1. Criar a pasta controllers - Os controladores são intermediarios, recebem as requisições e devolvem as respostas.
+2. Criar o arquivo livrosController.js 
+3. Criar a pasta routes - onde serão declaradas as rotas da nossa aplicação
+4. Criar o arquivo livrosRouters.js - onde serão indicadas as rotas para livros.
+5. Criar no diretorio routes o arquivo index.js onde serão centralizadas todas as rotas da aplicação.
+6. Adequar o arquivo app.js para as novas implementações de design pattern.
+7. Implementação do CRUD Completo.
