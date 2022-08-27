@@ -21,7 +21,7 @@ node da NodeJs: Api REST com Express e MongoDB.
     ```
       node server.js
     ```
-## Etapa 02 (commit 01)
+## Etapa 02 (Rotas módulo nativo http e Instalação do nodemon)
 
 1. Criando as primeiras rotas
     - const rotas no arquivo server.js
@@ -44,3 +44,26 @@ node da NodeJs: Api REST com Express e MongoDB.
 3. Criando o arquivo .gitignore
 
 O objetivo da criação do arquivo é para não subir para o git os diretórios/arquivos desnecessários (node_modules).
+
+## Etapa 03 (Instalando o Express / Preparando o Projeto)
+
+1. Instalando o express
+    ```
+      npm install express@4.17.3
+    ```
+2. Criando as pastas/arquivos adotando boas práticas de programação
+    - Criar pasta src (source)
+    - Criar dentro de src o arquivo app.js
+
+3. Implementando a importação do express e criando array com livros
+
+4. Implementando o método get
+
+5. Modificando o arquivo server.js para poder trabalhar com o express
+
+6. Redirecionando a porta para poder trabalhar com o .env ou local 3000
+
+7. Incluir o type no arquivo package.json necessário para trabalhar com export de modulos
+    ```
+       "type": "module",
+    ```
