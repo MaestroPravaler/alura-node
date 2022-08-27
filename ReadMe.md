@@ -11,7 +11,7 @@ node da NodeJs: Api REST com Express e MongoDB.
     - Crie uma pasta em um diretorio local
     - Inicialize o projeto em node
     ```
-      npm init -y
+    npm init -y
     ```
 
 2. Criar servidor local
@@ -19,7 +19,7 @@ node da NodeJs: Api REST com Express e MongoDB.
 
 3. Inicializar o Projeto
     ```
-      node server.js
+    node server.js
     ```
 ## Etapa 02 (Rotas módulo nativo http e Instalação do nodemon)
 
@@ -30,15 +30,15 @@ node da NodeJs: Api REST com Express e MongoDB.
     - Esta biblioteca realiza o reload automático quando salvamos um arquivo. é uma dependencia de desenvolvimento
     não é necessária enviar para produção. (-D)
     ```
-      npm install nodemon@2.0.15 -D
+    npm install nodemon@2.0.15 -D
     ```
     - Arquivo package.json criar um novo script ( linha 7 )
     ```
-      "dev": "nodemon server.js"
+    "dev": "nodemon server.js"
     ```
     - rodar o projeto referenciando o script que criamos
     ```
-      npm run dev
+    npm run dev
     ```
 
 3. Criando o arquivo .gitignore
@@ -49,7 +49,7 @@ O objetivo da criação do arquivo é para não subir para o git os diretórios/
 
 1. Instalando o express
     ```
-      npm install express@4.17.3
+    npm install express@4.17.3
     ```
 2. Criando as pastas/arquivos adotando boas práticas de programação
     - Criar pasta src (source)
@@ -65,5 +65,25 @@ O objetivo da criação do arquivo é para não subir para o git os diretórios/
 
 7. Incluir o type no arquivo package.json necessário para trabalhar com export de modulos
     ```
-       "type": "module",
+    "type": "module",
     ```
+
+## Etapa 04 (Criando o método POST, método PUT, método DELETE e o GET por Id)
+
+1. Adicionando o método POST no arquivo app.src
+2. Criando a visualização das entradas pelo postman
+    ```
+    body:
+    
+    {
+        "id": 3,
+        "titulo": "Clean Code",
+        "preco": 69.99
+    }
+    ```
+
+3. Utilizando o express.json() para reconhecer o body enviado no formato declarado.
+4. Adicionando o método PUT no arquivo app.src
+5. Aproveitando a lógica do método PUT e fazendo a consulta de livros por Id.
+6. Adicionando o método DELETE no arquivo app.src
+7. Introduzindo o conceito de "atribuição via desestruturação" => atribuição para uma variável valores retirados de um array ou objeto (linha 37)
