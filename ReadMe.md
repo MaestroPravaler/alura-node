@@ -115,3 +115,13 @@ O objetivo da criação do arquivo é para não subir para o git os diretórios/
 5. Criar no diretorio routes o arquivo index.js onde serão centralizadas todas as rotas da aplicação.
 6. Adequar o arquivo app.js para as novas implementações de design pattern.
 7. Implementação do CRUD Completo.
+
+## Etapa 07 (Relacionamento entre entidades)
+
+1. Criar a entidade "Autor" => Model(Autor.js) => Controller(autoresController.js) => Routes(autoresRoutes.js) => Inclusão no routes/index.js
+2. Realizar um CRUD completo para a entidade autores utilizando como modelo a entidade Livro criada anteriormente.
+3. Criar associação entre estas duas entidades Livro / Autor (model/Autor.js).
+    ```
+    autor:{type: mongoose.Schema.Types.ObjectId, ref: 'autores', required: true},
+    ```
+4. Consultar por campos expecíficos.
